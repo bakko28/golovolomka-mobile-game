@@ -197,6 +197,10 @@ body {
     }
 
     .game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin-top: 16px;
         height: 100%;
         width: 100%;
@@ -213,5 +217,68 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .hint_box {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        border: 2px red solid;
+        padding: 8px;
+        width: 100%;
+        height: 20%;
+    }
+
+    .hint_box ol {
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+        border: 2px green solid;
+    }
+
+    .hint_box ol li {
+        position: relative;
+        left: 6%;
+    }
+
+    .inputs_box {
+        margin: 16px 0px 16px 0px;
+        padding: 8px;
+        border: 2px blue solid;
+        width: 100%;
+        height: 100%;
+    }
+
+    .inputs_box p {
+        font-size: 24px;
+        line-height: 48px;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 16px;
+    }
+
+    .inputs_box p span {
+        background-color: red;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+    }
+
+    .result_box {
+        width: 100%;
+        height: 15%;
+        padding: 8px;
+        border: 2px green solid;
+    }
+
+    .result_box button {
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
     }
 }
